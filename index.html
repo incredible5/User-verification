@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<title>Project Verify</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="navibar">
+		<div class="compny-title">
+			<img src="logo.jfif">
+			<h1>PHP Project</h1>
+		</div>
+		<div class="hamburger" id="hamburger" onclick="dropShow('menu')">
+            <!-- <img src="hamburger.png" onclick="dropShow('navbar')" /> -->
+            <i class="glyphicon glyphicon-menu-hamburger"></i>
+        </div>
+        <div class="menu" id="menu">
+			<ul>
+				<li><a href="index.html"><i class="glyphicon glyphicon-home" style="padding-right: 10px"></i>Home</a></li>
+				<li><a href="#"><i class="glyphicon glyphicon-info-sign" style="padding-right: 10px"></i>About</a></li>
+				<li><a href="#"><i class="glyphicon glyphicon-envelope" style="padding-right: 10px"></i>Contact</a></li>
+				<li><a href="https://cnbcity.000webhostapp.com/" target="_blank"><i class="glyphicon glyphicon-pencil" style="padding-right: 10px"></i>Blog</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="login-form">
+		<h2 class="form-title">Sign up</h2>
+                        <form method="POST" action="verify.php" class="register-form" id="register-form">
+                            <div class="form-group">
+                                <label for="name"><i class="glyphicon glyphicon-user"></i></label>
+                                <input type="text" name="name" id="name" placeholder="Your Name" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="glyphicon glyphicon-envelope"></i></label>
+                                <input type="email" name="email" id="email" placeholder="Your Email" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="mobile"><i class="glyphicon glyphicon-earphone"></i></label>
+                                <input type="mobile" name="mobile" id="mobile" placeholder="Your Mobile Number" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="glyphicon glyphicon-lock"></i></label>
+                                <input type="password" name="pass" id="pass" placeholder="Password" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="re-pass"><i class="glyphicon glyphicon-lock"></i></label>
+                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password" required />
+                            </div>
+                            <div class="form-group" style="margin-bottom: 0">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" required />
+                                <label for="agree-term" class="label-agree-term">I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                            </div>
+                            <div class="form-group" style="margin-bottom: 0">
+                                <input type="radio" name="verification" value="email" class="agree-term" checked />
+                                <label for="agree-term" class="label-agree-term">Verify via email</label>
+                            </div>
+                            <div class="form-group" style="margin-top: 0">
+                                <input type="radio" name="verification" value="mobile" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term">Verify via mobile</label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                            </div>
+                        </form>
+                        <h4 style="padding: 1em">Already a member? <a href="login.html">LogIn</a></h4>
+	</div>
+	<div class="video-box">
+		<img src="pic.png" width="100%">
+	</div>
+	<div class="content">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<br>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<br>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<script type="text/javascript" src="ham.js"></script>
+</body>
+</html>

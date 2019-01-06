@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+	<title>Project Verify</title>
+	<style type="text/css">
+		body
+		{
+			background: url('Website-Design-Background.jpg');
+			background-repeat: none;
+			background-size: cover;
+		}
+		.login
+		{
+			width: 40vw;
+			margin: 10% auto;
+			background: white;
+			padding: 30px;
+			border-radius: 7px;
+		}
+		.login h2
+		{
+			text-align: center;
+			border-bottom: 1px dashed black;
+			margin-bottom: 30px;
+		}
+		@media only screen and (max-width: 400px)
+		{
+			.login
+			{
+				margin: 20% auto;
+				width: 90%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="navibar">
+		<div class="compny-title">
+			<img src="logo.jfif">
+			<h1>PHP Project</h1>
+		</div>
+		<div class="hamburger" id="hamburger" onclick="dropShow('menu')">
+            <!-- <img src="hamburger.png" onclick="dropShow('navbar')" /> -->
+            <i class="glyphicon glyphicon-menu-hamburger"></i>
+        </div>
+        <div class="menu" id="menu">
+			<ul>
+				<li><a href="index.html"><i class="glyphicon glyphicon-home" style="padding-right: 10px"></i>Home</a></li>
+				<li><a href="#"><i class="glyphicon glyphicon-info-sign" style="padding-right: 10px"></i>About</a></li>
+				<li><a href="#"><i class="glyphicon glyphicon-envelope" style="padding-right: 10px"></i>Contact</a></li>
+				<li><a href="https://cnbcity.000webhostapp.com/" target="_blank"><i class="glyphicon glyphicon-pencil" style="padding-right: 10px"></i>Blog</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="login">
+		<h2>Log In</h2>
+		<form action="signcheck.php" method="POST">
+			<div class="form-group">
+	        	<label for="email"><i class="glyphicon glyphicon-envelope"></i></label>
+				<input type="email" name="email" id="email" placeholder="Your Email"/>
+	        </div>
+			<div class="form-group">
+				<label for="pass"><i class="glyphicon glyphicon-lock"></i></label>
+				<input type="password" name="passwd" id="pass" placeholder="Password"/>
+	        </div>
+	        <div class="form-group form-button">
+				<input type="submit" name="signup" id="signup" class="form-submit" value="Log In"/>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="ham.js"></script>
+</body>
+</html>

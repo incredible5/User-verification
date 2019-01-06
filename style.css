@@ -1,0 +1,327 @@
+html,body
+{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	background: rgba(200,200,200,0.1);
+}
+.compny-title
+{
+	padding: 0.5vw 0;
+	display: inline-block;
+	margin: 0 auto;
+	margin-left: 3em;
+	text-align: center;
+	background: white;
+}
+.compny-title img
+{
+	float: left;
+	height: 2.5vw;
+}
+.compny-title h1
+{
+	margin: 0;
+	font-family: cursive;
+	font-weight: bold;
+	font-size: 2.5vw;
+	letter-spacing: 10px;
+	color: blue;
+	display: inline-block;
+	/*transform: scale(1,1);*/
+}
+.navibar
+{
+	background: white;
+	z-index: 99;
+	width: 100%;
+	position: sticky;
+	top: 0;
+	padding: 0;
+	overflow: hidden;
+	display: block;
+}
+.menu
+{
+	margin: 0;
+	padding: 0 0 0 0;
+	float: right;
+}
+.hamburger
+{
+	float: right;
+	display: none;
+	font-size: 2.5vw;
+	margin-right: 20vw;
+}
+.hamburger:hover
+{
+	cursor: pointer;
+}
+.menu ul
+{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	background: rgba(184,50,17,0.9);
+	border-left: 2px solid black;
+	border-top-left-radius: 70px;
+}
+.navibar ul li
+{
+	border-left: 2px solid black;
+	border-top-left-radius: 70px;
+	font-size: 2.5vw;
+	float: left;
+	margin: 0;
+	list-style-type: none;
+	padding: 0 30px 0 30px;
+}
+.navibar ul li:first-child
+{
+	border-left: none;
+}
+.navibar ul li a
+{
+	color: white;
+	margin: 0;
+	font-size: 0.5em !important;
+	text-decoration: none;
+	padding: 0 20px 0 20px;
+}
+
+/*register form styling*/
+.login-form
+{
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	padding: 2em 2em 0 2em;
+	float: right;
+	margin: 2% 7% 1% 0;
+	width: 27%;
+	background: white;
+}
+input
+{
+	width: 100%;
+	display: block;
+	border: none;
+	border-bottom: 1px solid #999;
+	padding: 6px 30px;
+	box-sizing: border-box;
+}
+input::-webkit-input-placeholder
+{
+	color: #999;
+}
+input::-moz-placeholder
+{
+    color: #999;
+}
+input:-ms-input-placeholder
+{
+    color: #999;
+}
+input:-moz-placeholder
+{
+    color: #999;
+}
+input:focus
+{
+    border-bottom: 1px solid #222;
+}
+input:focus::-webkit-input-placeholder
+{
+    color: #222;
+}
+input:focus::-moz-placeholder
+{
+    color: #222;
+}
+input:focus:-ms-input-placeholder
+{
+    color: #222;
+}
+input:focus:-moz-placeholder
+{
+    color: #222;
+}
+label
+{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	color: #222;
+}
+.agree-term
+{
+	display: inline-block;
+	width: auto;
+	margin-right: 2px;
+}
+.signup-form
+{
+	margin-left: 75px;
+	margin-right: 75px;
+	padding-left: 34px;
+}
+.register-form
+{
+  	width: 100%;
+}
+.form-group
+{
+	position: relative;
+	margin-bottom: 25px;
+	overflow: hidden;
+}
+.form-group:last-child
+{
+    margin-bottom: 0px;
+}
+.label-agree-term
+{
+	position: relative;
+	top: 0%;
+	transform: translateY(0);
+	-moz-transform: translateY(0);
+	-webkit-transform: translateY(0);
+	-o-transform: translateY(0);
+	-ms-transform: translateY(0);
+}
+.form-submit
+{
+	font-size: 1.3em;
+}
+/*video section*/
+.video-box
+{
+	width: 50%;
+	display: block;
+	margin: 3% auto;
+	overflow: hidden;
+}
+.video-box video
+{
+	max-width: 100%;
+}
+.content
+{
+	display: block;
+	clear: both;
+	width: 80%;
+	margin: auto;
+}
+@media only screen and (max-width: 1300px)
+{
+	.login-form
+	{
+		width: 35%;
+	}
+}
+@media only screen and (max-width: 1000px)
+{
+	.login-form
+	{
+		float: none;
+		display: block;
+		width: 50%;
+		margin: 7em auto 0 auto;
+		clear: both;
+	}
+	.video-box
+	{
+		width: 70%;
+	}
+}
+@media only screen and (max-width: 900px)
+{
+	.compny-title
+	{
+		margin-left: 35vw;
+	}
+	.compny-title img
+	{
+		margin-right: 3vw;
+	}
+	.hamburger
+	{
+		display: block;
+	}
+	.menu
+	{
+		z-index: 98;
+		width: 100%;
+		float: right;
+		display: none;
+	}
+	.menu ul
+	{
+		width: 100%;
+		border-radius: 0;
+		padding-left: 0;
+		border-left: none;
+	}
+	.menu ul li
+	{
+		width: 100%;
+		text-align: center;
+		float: none;
+		display: block;
+		border: none;
+		border-radius: 0;
+		border-bottom: 1px solid white;
+	}
+}
+@media only screen and (max-width: 725px)
+{
+	.login-form
+	{
+		width: 70%;
+	}
+}
+@media only screen and (max-width: 400px)
+{
+	.navibar
+	{
+		padding-top: 5vw;
+	}
+	.compny-title
+	{
+		margin-left: 1vw;
+	}
+	.compny-title h1
+	{
+		font-size: 9vw;
+	}
+	.compny-title img
+	{
+		height: 9vw;
+	}
+	.hamburger
+	{
+		font-size: 9vw;
+		margin-right: 7vw;
+	}
+	.navibar .menu ul li
+	{
+		font-size: 9vw;
+	}
+	.login-form
+	{
+		margin: 5vw auto 5vw auto;
+		width: 97%;
+	}
+	.video-box
+	{
+		width: 90%;
+		margin-top: 7vw;
+	}
+}
